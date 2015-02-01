@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-297b77acf09b06fb9b554072141b133221e1ceb2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.1.2\5c03fd59597e1dfade0591e585d74935bf8e3db3\firebase-client-jvm-2.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5c03fd59597e1dfade0591e585d74935bf8e3db3">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.1.2-7c11a73858236d1eab417d66a8fa4b419bfddee3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\classes-1097610b689c153f0d2409fad9926c5e518b0925.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\Documents\adt-bundle-windows-x86-20131030\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-549547d48c22d961f391e19b7d53e43b950aeefa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\tubesock-0.0.11-b3e4fdbb7408652400e4d44679855fc39f54adf5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2-b81db8b9004bf01cfbd02a891fa629703d6578c1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\jackson-databind-2.2.2-16e85b1dbbbd05ec0a65e8f65a623959110d5dad.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.1.2\4de410cd611e4b56deb4c203cd0b8fcb80a5759\firebase-client-android-2.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="04de410cd611e4b56deb4c203cd0b8fcb80a5759">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\firebase-client-android-2.1.2-9ab42c084692a200800c2b7068266e2e15975604.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\classes-7dd60639862f632929279efa0b502c645b0782c2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sultan\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\Sultan\AndroidStudioProjects\testing\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2-a0286ae043e0215368bd0c5e50b043325e6060e8.jar" />
+    </item>
+
+</items>

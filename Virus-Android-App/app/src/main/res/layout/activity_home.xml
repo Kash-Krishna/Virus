@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/skull"
+    tools:context="myapplication.example.sultan.testing.MainActivity">
+
+    <TextView
+        android:id="@+id/playbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="15dp"
+        android:text="Play"
+        android:textColor="#6E0E0F"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

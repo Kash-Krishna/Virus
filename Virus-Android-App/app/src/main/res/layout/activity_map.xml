@@ -1,0 +1,246 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/backgroundColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/good" />
+
+            <RelativeLayout
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/timerbar">
+
+                <ImageView
+                    android:id="@+id/timericon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/thetimer" />
+
+                <TextView
+                    android:id="@+id/countdown"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@+id/timericon"
+                    android:padding="5dp"
+                    android:text="300"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zombienotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timer"
+                android:background="@color/zombienotification">
+
+                <ImageView
+                    android:id="@+id/zombierunning"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+
+
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/zombie" />
+
+                <TextView
+                    android:id="@+id/zombiewarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@+id/zombierunning"
+                    android:padding="2dp"
+                    android:text="WARNING\nVIRUS ALERT"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mapinfobar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#BF000000"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/zone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="Bourns Hall of Engineering"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/zone_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zone_title"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="900 University Ave.\nRiverside, CA 92521\nTel: (951) 827-1012"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lower_half"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.35">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/infectedbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/infectedBar"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/infectedtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/infected"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/zone_infected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infectedtitle"
+                        android:gravity="center"
+                        android:text="@string/number_infected"
+                        android:textSize="90sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/numsafebox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/numsafe"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/safetitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="Healthy"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/zone_safe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/safetitle"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/number_safe"
+                        android:textSize="90sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/userstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight=".01"
+                android:background="@color/human"
+                android:paddingBottom="1dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="1dp">
+
+                <ImageView
+                    android:id="@+id/heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/user_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:text="Healthy"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        class="myapplication.example.sultan.testing.NavigationDrawerFragment"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

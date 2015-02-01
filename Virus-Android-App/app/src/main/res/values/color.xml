@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  FLAT
+           <color name="backgroundColor">#141301</color>
+           <color name="primaryColor">#1E020F</color>
+           <color name="primaryColorDark">#70161E</color>
+           <color name="infectedBar">#70161E</color>
+           <color name="colorAccent">#7EA16B</color>
+           <color name="safeuser">#2F3233</color>
+           <color name="numsafe">#2F3233</color>
+           <color name="zombie">#FF6600</color>
+           <color name="human">#00FF00</color>
+           <color name="timerbar">#16a085</color>
+           <color name="zombienotification">#f1c40f</color>
+   -->
+
+           <color name="backgroundColor">#141301</color>
+           <color name="primaryColor">#1E020F</color>
+           <color name="primaryColorDark">#70161E</color>
+           <color name="infectedBar">#c0392b</color>
+           <color name="colorAccent">#7EA16B</color>
+           <color name="safeuser">#2c3e50</color>
+           <color name="numsafe">#2c3e50</color>
+           <color name="zombie">#FF6600</color>
+           <color name="human">#27ae60</color>
+           <color name="timerbar">#16a085</color>
+           <color name="zombienotification">#f1c40f</color>
+
+</resources>
