@@ -33,12 +33,22 @@ def getTicks(start):
 		time.sleep(1);
 	return 1, start;
 
+def inRange(person, zombie):
+	return (abs(person[2] - zombie[2]) < 40.0) and (abs(person[1] - zombie[1]) < 40.0);
+
+def makeZombie(person):
+	addr = '/Active_List/' + person[0] ;
+	db = firebase.FirebaseApplication('https://virus.firebaseio.com');
+	db.put(addr,'/status/', 'Infected');
+
 def getActives():
 	db = firebase.FirebaseApplication('https://virus.firebaseio.com');
 	mac_list = db.get('/Active_List', None);
 	mac_list_org = json.dumps(mac_list) ;
 	
 	addrs = re.findall(r"([\dA-F]{2}(?:[-:][\dA-F]{2}){5})", mac_list_org, re.I);
+	infected = [];
+	healthy = [];
 	for i in addrs:
 		auth_code = "Basic dWNzYmhhY2sxOnVjc2JoYWNrMQ==";
 		link = "http://173.37.40.112/api/location/v1/clients/" + i.lower();
@@ -46,12 +56,31 @@ def getActives():
 		x_val =  obj.json()['mapCoordinate']['x'];
 		y_val =  obj.json()['mapCoordinate']['y'];
 		
-		addr = '/Active_List/' + i + "/pos/";
+		pos_addr = '/Active_List/' + i + "/pos/";
+		stat_addr = '/Active_List/' + i + "/status/";
+		addr = '/Active_List/' + i;
 		
-		print x_val, y_val;
+		db.put( pos_addr ,'x',x_val);
+		db.put( pos_addr ,'y',y_val);
 		
-		db.put( addr ,'x',x_val);
-		db.put( addr ,'y',y_val);
+		is_infected = db.get(stat_addr, None);
+		
+		i_obj = (i, x_val, y_val);
+		
+		if(is_infected == 'Infected'):
+			infected.insert(0,i_obj);
+		else:
+			healthy.insert(0,i_obj);
+	
+	print healthy, infected;
+	#end for loop
+	for person in healthy:
+		for zombie in infected:
+			if(inRange(person, zombie)):
+				makeZombie(person);
+	
+
+
 
 
 def main():
@@ -60,7 +89,6 @@ def main():
 	start = 100;
 	t = threading.Thread(target = getTicks, args=(start,));
 	t.start();
-	callCiscoLoc();
 	while ~is_done :
 		getActives();
 		if(start == 0):
